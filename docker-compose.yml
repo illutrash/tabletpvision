@@ -1,0 +1,13 @@
+version: '3'
+services:
+
+    # This docker-compose.yml is for development purposes omly...
+
+    db:
+        image: postgres:latest
+        ports:
+            - "5566:5432"
+        environment:
+            - POSTGRES_DB=tabletopvision
+            - POSTGRES_HOST_AUTH_METHOD=trust
+
